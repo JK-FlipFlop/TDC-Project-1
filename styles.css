@@ -24,9 +24,9 @@ body{
 
 .enroll-head{
   position: absolute;
-  left: 83%;
+  left: 78%;
   top: 24%;
-  padding: 12px 25px;
+  padding: 8px 18px 10px 18px;
   border-radius: 50px;
   border: 2px solid wheat;
   background: rgb(235, 47, 56);
@@ -35,13 +35,26 @@ body{
   transition: 0.3s ease-in-out
 }
 
-.enroll-head:hover{
+.enroll-head:hover, .enroll-head-1:hover{
   background: #F0414A;
   border: 0px solid #F0414A;
   color: white;
   border: 2px solid wheat;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+}
+
+.enroll-head-1{
+  position: absolute;
+  left: 89%;
+  top: 24%;
+  padding: 8px 18px 11px 18px;
+  border-radius: 50px;
+  border: 2px solid #F0414A;
+  background: #fff;
+  font-weight: 600;
+  color: #333;
+  transition: 0.3s ease-in-out
 }
 
 .v-header{
@@ -253,20 +266,6 @@ h2{
   padding-top: 40px;
 }
 
-.secret{
-  text-decoration: none;
-  text-emphasis: none;
-  font-size: 16px;
-  color: #333;
-}
-
-.secret:hover{
-  text-decoration-color: #333;
-  text-decoration: none;
-  color: #333;
-
-}
-
 /*Media Queries */
 /* 
   Device = Tablets, Ipads (portrait)
@@ -283,14 +282,36 @@ h2{
 
   .enroll-head{
     position: absolute;
-    left: 79%;
-    top: 24%;
-    padding: 15px 25px;
-    border-radius: 50px;
-    border: 2px solid wheat;
-    background: rgb(235, 47, 56);
+    left: 64%;
+    top: 31%;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    background:none;
     font-weight: 600;
-    color: white;
+    font-size: 24px;
+    color: #F0414A
+  }
+  
+  .enroll-head-1{
+    position: absolute;
+    left: 84%;
+    top: 33%;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    background:none;
+    font-weight: 600;
+    color: #333;
+    font-size: 20px;
+  }
+
+  .enroll-head:hover, .enroll-head-1:hover{
+    background: none;
+    border: none;
+    color: none;
+    transition: none;
+    cursor: none;
   }
 
   .header-overlay{
@@ -411,8 +432,7 @@ h2{
 @media (min-width: 320px) and (max-width: 480px) {
  
   body{
-    overflow-x: hidden;
-    opacity: 10px !important
+    overflow-x: hidden !important;
   }
 
   .navbar{
@@ -430,18 +450,39 @@ h2{
   nav a{
     font-size: 15px;
   }
-  
+
   .enroll-head{
     position: absolute;
-    left: 73%;
-    top: 24%;
-    padding: 10px 12px;
-    border-radius: 50px;
-    border: 2px solid wheat;
-    background: rgb(235, 47, 56);
+    left: 53%;
+    top: 33%;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    background:none;
     font-weight: 600;
-    color: white;
-    margin: 0;
+    font-size: 18px;
+    color: #F0414A
+  }
+  
+  .enroll-head-1{
+    position: absolute;
+    left: 80%;
+    top: 34%;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    background:none;
+    font-weight: 600;
+    font-size: 15px;
+    color: #333
+  }
+
+  .enroll-head:hover, .enroll-head-1:hover{
+    background: none;
+    border: none;
+    color: none;
+    transition: none;
+    cursor: none;
   }
 
   .fullscreen-video-wrap{
